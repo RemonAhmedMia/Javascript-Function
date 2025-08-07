@@ -18,3 +18,16 @@ console.log(evens);
 
 // +++++++++++++++odd number
 
+function oddNumberonly(numbers){
+    const odd = [];
+    for(const math of numbers){
+        if (math % 2 === 1) {
+            console.log(math);
+            odd.push(math);
+        }
+    }
+    return odd
+}
+const numberOTwo = [12,23,43,34,54,13];
+const rimo = oddNumberonly(numberOTwo);
+console.log(rimo);
